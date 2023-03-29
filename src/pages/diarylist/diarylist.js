@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { prisma } from '../../../server/db/client'
 import axios from 'axios'
 import Head from 'next/head'
-import TopBar from '../../component/Top_bar';
+import TopBar from '../../component/top_bar';
 import SideMenu from '../../component/SideMenu';
 import { MyPosts } from '../../pages/index';
 import UserName from '../../component/UserName';
