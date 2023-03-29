@@ -1,4 +1,4 @@
-import styles from '@/src/styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 

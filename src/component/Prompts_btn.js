@@ -1,4 +1,4 @@
-import styles from '@/src/styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 export default function ShowPromptsBtn(props) {
   return (
@@ -10,4 +10,3 @@ export default function ShowPromptsBtn(props) {
     </div>
   </button>);
 }
-

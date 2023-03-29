@@ -1,6 +1,6 @@
-import styles from '@/src/styles/SideMenu.module.css'
+import styles from '../styles/SideMenu.module.css'
 import Link from 'next/link'
-import UserName from '@/src/component/UserName.js';
+import UserName from '../component/UserName.js';
 
 export default function SideMenu(){
 

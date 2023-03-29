@@ -1,18 +1,18 @@
-import styles from '@/src/styles/Home.module.css'
+import styles from '../../src/styles/Home.module.css'
 import React, { useState, useEffect } from 'react'
-import { prisma } from '@/server/db/client'
+import { prisma } from '../../server/db/client'
 import axios from 'axios'
 import Head from 'next/head'
-import TopBar from '@/src/component/Top_bar';
-import SideMenu from '@/src/component/SideMenu';
-import { News } from '@/src/pages/api/news';
-import Weather from '@/src/pages/api/weather';
-import ShowWeatherBtn from '@/src/component/weather_btn';
+import TopBar from '../component/Top_bar';
+import SideMenu from '../component/SideMenu';
+import { News } from '../pages/api/news';
+import Weather from '../pages/api/weather';
+import ShowWeatherBtn from '../component/weather_btn';
 import LocationInput from './api/location_input';
-import Prompts from '@/src/component/Prompts';
-import ShowPromptsBtn from '@/src/component/Prompts_btn';
-import SaveBtn from '@/src/component/Save_btn';
-import Footer from '@/src/component/Footer';
+import Prompts from '../component/Prompts';
+import ShowPromptsBtn from '../component/Prompts_btn';
+import SaveBtn from '../component/Save_btn';
+import Footer from '../component/Footer';
 
 export default function Home({posts}) {
   const [isReadyToSave, setIsReadyToSave] = useState(false);

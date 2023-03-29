@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from '@/src/styles/Home.module.css';
-import data from '@/src/data/Prompts.json';
+import styles from '../styles/Home.module.css';
+import data from '../data/Prompts.json';
 
 export default function Prompts(props){
 
