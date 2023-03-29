@@ -10,24 +10,6 @@ import UserName from '@/src/component/UserName';
 import Weather from '@/src/pages/api/weather';
 import Footer from '@/src/component/Footer';
 
-const WEATHER_ICON_MAP = {
-  'Thunderstorm': 'https://cdn-icons-png.flaticon.com/512/2280/2280689.png',
-  'Drizzle': 'https://cdn-icons-png.flaticon.com/512/3127/3127605.png',
-  'Rain': 'https://cdn-icons-png.flaticon.com/512/3127/3127605.png',
-  'Snow': 'https://cdn-icons-png.flaticon.com/512/3127/3127633.png',
-  'Clear': 'https://cdn-icons-png.flaticon.com/512/3149/3149190.png',
-  'Clouds': 'https://cdn-icons-png.flaticon.com/512/3127/3127645.png',
-  'Mist': 'https://cdn-icons-png.flaticon.com/512/3692/3692768.png',
-  'Smoke': 'https://cdn-icons-png.flaticon.com/512/3692/3692754.png',
-  'Haze': 'https://cdn-icons-png.flaticon.com/512/3692/3692758.png',
-  'Dust': 'https://cdn-icons-png.flaticon.com/512/3692/3692756.png',
-  'Fog': 'https://cdn-icons-png.flaticon.com/512/3692/3692762.png',
-  'Sand': 'https://cdn-icons-png.flaticon.com/512/3692/3692764.png',
-  'Ash': 'https://cdn-icons-png.flaticon.com/512/3692/3692752.png',
-  'Squall': 'https://cdn-icons-png.flaticon.com/512/2280/2280717.png',
-  'Tornado': 'https://cdn-icons-png.flaticon.com/512/2280/2280730.png',
-};
-
 export async function getServerSideProps() {
   try{
     const posts = await prisma.post.findMany()
