@@ -9,6 +9,6 @@ module.exports = {
     NEWS_API_KEY: process.env.NEWS_API_KEY,
   },
   "engines": {
-    "node": "16.17.0"
+    "node": "16.x"
   },
 };
