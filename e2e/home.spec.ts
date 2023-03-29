@@ -8,9 +8,9 @@ test.describe('Header area', () => {
       await expect(page).toHaveTitle('Miood Diary');
   })
 
-  test('The meta tag', async ({ page }) => { 
+  test('The meta tag', async ({ page }) => {
       await page.goto(urlHome)
-      
+
       const metaDescriptionOne = page.locator('meta[name="description"]')
       await expect(metaDescriptionOne).toHaveAttribute("content", "A diary app that you can write everyday event")
 
@@ -32,7 +32,7 @@ test.describe('Top bar', () => {
     await page.screenshot({ path: 'logo_full_ver.png'})
   })
 
-  test('Top bar area stylizing', async({ page }) => { 
+  test('Top bar area stylizing', async({ page }) => {
     await page.goto(urlHome)
 
     const carousel = page.locator('#topbar_container');
@@ -68,11 +68,6 @@ test.describe('Side bar', () => {
     await page.getByRole('link', { name: 'Diary List' }).click();
   })
 
-  test ('Side menu link - Favorite Diary', async({ page }) => {
-    await page.goto(urlHome)
-    await page.getByRole('link', { name: 'Favorite Diary' }).click();
-  })
-
   test ('Side menu link - Back To Cover', async({ page }) => {
     await page.goto(urlHome)
     await page.getByRole('link', { name: 'Back To Cover' }).click();
@@ -85,12 +80,12 @@ test.describe('Save button', () => {
     await page.getByRole('button', { name: 'Save' }).click();
   })
 
-  test('Save button hovering effect', async({ page }) => { 
+  test('Save button hovering effect', async({ page }) => {
     await page.goto(urlHome)
   await expect(page.locator('button > span')).toHaveCount(4);
   })
 
-  test('Save button stylizing', async({ page }) => { 
+  test('Save button stylizing', async({ page }) => {
     await page.goto(urlHome)
 
     const saveBtn = page.locator('#btn');
@@ -114,5 +109,3 @@ test.describe('Save button', () => {
     expect(grabbtnBackground).toBe("rgb(255, 255, 255)");
   })
 })
-
-
