@@ -1,13 +1,13 @@
-import styles from '../../src/styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Head from 'next/head'
 import Link from 'next/link'
 import Lottie from 'lottie-react'
 import animationData from '../../public/arrow.json';
-import UserName from '../../src/component/UserName';
-import TopBar from '../../src/component/top_bar';
-import Footer from '../../src/component/Footer';
+import UserName from '../component/UserName';
+import TopBar from '../component/top_bar';
+import Footer from '../component/Footer';
 
 
 export default function CoverPage() {
