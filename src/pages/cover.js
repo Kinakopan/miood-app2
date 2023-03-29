@@ -7,7 +7,7 @@ import Lottie from 'lottie-react'
 import animationData from '../../public/arrow.json';
 import UserName from '../component/UserName';
 import TopBar from '../component/top_bar';
-import Footer from '../component/Footer';
+import Footer from '../component/footer';
 
 
 export default function CoverPage() {

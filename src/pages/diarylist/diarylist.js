@@ -8,7 +8,7 @@ import SideMenu from '../../component/SideMenu';
 import { MyPosts } from '../../pages/index';
 import UserName from '../../component/UserName';
 import Weather from '../../pages/api/weather';
-import Footer from '../../component/Footer';
+import Footer from '../../component/footer';
 
 export async function getServerSideProps() {
   try{

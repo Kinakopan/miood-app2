@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { prisma } from '../../server/db/client'
 import axios from 'axios'
 import Head from 'next/head'
-import TopBar from '../component/Top_bar';
+import TopBar from '../component/top_bar';
 import SideMenu from '../component/SideMenu';
 import { News } from '../pages/api/news';
 import Weather from '../pages/api/weather';
@@ -12,7 +12,7 @@ import LocationInput from './api/location_input';
 import Prompts from '../component/Prompts';
 import ShowPromptsBtn from '../component/Prompts_btn';
 import SaveBtn from '../component/Save_btn';
-import Footer from '../component/Footer';
+import Footer from '../component/footer';
 
 export default function Home({posts}) {
   const [isReadyToSave, setIsReadyToSave] = useState(false);
