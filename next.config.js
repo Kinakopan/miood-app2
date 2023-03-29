@@ -11,4 +11,8 @@ module.exports = {
   "engines": {
     "node": "16.x"
   },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest"
+  }
 };
