@@ -83,7 +83,7 @@ export default function Home({posts}) {
         ${weather ? weather.map(w => `${w.main}: ${w.description}`).join('\n') : ''},
         ${newsAreaContent},
         ${savedPrompts},
-        ${textContent}
+        ${textContent},
       `;
       setContent(content);
       setDiaryEntry(content);
